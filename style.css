@@ -67,9 +67,11 @@ a.block:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 45px;  /* Adjusted to position under the search icon */
+    top: 45px;
+    /* Adjusted to position under the search icon */
     left: 50%;
-    transform: translateX(-50%); /* Centering horizontally */
+    transform: translateX(-50%);
+    /* Centering horizontally */
     background-color: #f9f9f9;
     min-width: 200px;
     z-index: 1;
@@ -244,6 +246,7 @@ nav .nav-links {
     cursor: pointer;
 }
 
+/*telefon användning*/
 @media (width < 768px) {
     nav .nav-links {
         display: none;
@@ -281,6 +284,23 @@ nav .nav-links {
         margin-left: -30px;
     }
 }
+
+/*datorer med skärmstorlek 1380*/
+@media (width < 1380px) {
+    .gas{
+        margin-left: -10px;
+    }
+
+    .souf-loga {
+        width: 350px;
+    }
+
+    .space{
+        margin-right: 10px;
+    }
+}
+
+
 
 /* Add a simple animation for the mobile menu */
 #mobile-menu {
