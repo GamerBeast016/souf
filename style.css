@@ -178,7 +178,6 @@ ion-icon {
 }
 
 .souf-loga {
-    size: 60px;
     overflow: hidden;
 }
 
@@ -275,6 +274,7 @@ nav .nav-links {
 
     .souf-loga {
         margin-left: 2px;
+        size: 60px;
     }
 
     .gas {
