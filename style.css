@@ -119,7 +119,7 @@ input[type="text"]:focus {
 }
 
 /* Adjusting the layout for mobile and smaller screens */
-@media (max-width: 768px) {
+@media (width < 768px) {
     #mobile-menu {
         max-width: 100%;
         padding: 10px;
@@ -223,7 +223,7 @@ nav .nav-links {
     padding-bottom: 40px;
 }
 
-@media (max-width: 768px) {
+@media (width < 768px) {
     nav {
         flex-direction: column;
         align-items: center;
@@ -244,7 +244,7 @@ nav .nav-links {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (width < 768px) {
     nav .nav-links {
         display: none;
     }
