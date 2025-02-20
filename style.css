@@ -217,7 +217,7 @@ nav .nav-links {
 }
 
 .underline {
-    border-bottom: 2px solid #d6d3d3da;
+    border-bottom: 2px solid;
     padding-bottom: 40px;
 }
 
