@@ -54,3 +54,30 @@ document.getElementById("menu-button").addEventListener("click", function() {
   mobileMenu.classList.toggle("showne");
 });
 
+// for the form to show a message
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("form");
+  const messageDiv = document.createElement("div");
+  messageDiv.style.display = "none";
+  messageDiv.style.marginTop = "20px";
+  messageDiv.style.paddingLeft = "20%";
+  messageDiv.style.color = "#313131da";
+  messageDiv.style.fontWeight = "bold"
+  
+  const submitButton = form.querySelector("button[type='submit']");
+  submitButton.parentNode.insertBefore(messageDiv, submitButton.nextSibling);
+
+  form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      
+      const name = document.getElementById("kontaktperson").value;
+      messageDiv.textContent = `Tack, ${name}! Din anmälan har skickats.`;
+      messageDiv.style.display = "block";
+
+      setTimeout(() => {
+        messageDiv.style.display = "none";
+    }, 5000);
+      
+      form.reset();
+  });
+});
