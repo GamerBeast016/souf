@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syrisk Ortodoxa Ungdomsförbundet – Syrisk Ortodoxa Ungdomsförbundet inom Ärkestiftet av Sverige och
+        Skandinavien</title>
+    <link rel="stylesheet" href="aktiviteter.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="img/SOUF-logo-header.png">
+</head>
+
+<body>
+    <div class="medier">
+        <a href="https://www.facebook.com/StaMariaKyrkanEskilstuna" target="_blank"><ion-icon name="logo-facebook"
+                class="social"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-youtube" class="social" target="_blank"></ion-icon></a>
+        <a href="https://www.instagram.com/soufstmaria/" target="_blank"><ion-icon name="logo-instagram"
+                class="social"></ion-icon></a>
+        <a href="#"><ion-icon name="mail-outline" class="social" target="_blank"></ion-icon></a>
+    </div>
+    <nav>
+        <div class="gas"></div>
+        <a href="index.html"><img src="img/SOUF-logo.png" alt="SOUF-logo" class="souf-loga"></a>
+        <div class="space">
+        </div>
+        <div class="dropdown">
+            <ion-icon name="search-outline" onclick="toggleDropdown('myDropdown1')" class="dropbtn"></ion-icon>
+            <div id="myDropdown1" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput1"
+                    onkeyup="filterFunction('myInput1', 'myDropdown1')"
+                    onkeydown="handleKeyDown(event, 'myInput1', 'myDropdown1')">
+                <a href="shop.html">Shopp</a>
+                <a href="aktiviteter.html">Aktiviteter</a>
+                <a href="blimedlem.html">Bli Medlem</a>
+                <a href="kontakta.html">Kontakta oss</a>
+            </div>
+        </div>
+        <a href="index.html" class="nav-links">Hem</a>
+        <a href="shop.html" class="nav-links">Shopp</a>
+        <a href="aktiviteter.html" class="nav-links" id="active">Aktiviteter</a>
+        <a href="blimedlem.html" class="nav-links">Bli Medlem</a>
+        <a href="#https://www.flickr.com/" class="nav-links">BildAlbum</a>
+        <a href="kontakta.html" class="nav-links">Kontakta oss</a>
+
+    </nav>
+    <div>
+        <button id="menu-button">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+    <div id="mobile-menu">
+        <a href="index.html" class="block text-purple-700">Hem</a>
+        <a href="shop.html" class="block text-purple-700">Shopp</a>
+        <a href="aktiviteter.html" class="block text-purple-700">Aktiviteter</a>
+        <a href="blimedlem.html" class="block text-purple-700">Bli Medlem</a>
+        <a href="#" class="block text-purple-700">BildAlbum</a>
+        <a href="kontakta.html" class="block text-purple-700">Kontakta oss</a>
+    </div>
+
+    <div class="underline">
+    </div>
+
+
+    <div class="souf">
+        <h2>SOUF Stmaria aktiviteter</h2>
+        <div class="under"></div>
+        <div class="händelsen">
+            <p>I den kanske största händelsen sedan bildandet av SOUF köpte man den 28 december 2016, med Guds hjälp, en
+                nerlagd
+                skola i Katrineholms kommun efter nästan tre års letande.
+                I en tid då bland annat lägergårdar har blivit allt svårare att hyra är SOUF:s huvudvision med köpet att
+                syrisk-ortodoxa barn och ungdomar
+                i Sverige ska ha en egen och gemensam plats med syrisk-ortodox profil för läger, seminarier, temadagar
+                och
+                mycket annat.
+            </p>
+
+            <p>Fastigheten, som döptes till SOUF St Stefanos lägergård under dess invigning den 11 mars 2017, är ett
+                stort
+                steg
+                för SOUF och SOUF tackar Gud för denna fantastiska möjlighet och hoppas på många välsignade dagar i
+                detta
+                syrisk-ortodoxa center!
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="bokning">
+        <h1>Bokning
+        </h1>
+    </div>
+
+    <form action="aktiviteter.html" method="POST">
+        <p>Om ni är intresserade av att genomföra läger, övernattningar, endagsaktiviteter och konferenser är ni mer än
+            välkomna att boka in er i SOUF Stmaria aktiviteter. Använd formuläret nedan för att skicka in din
+            bokningsförfrågan.
+        </p>
+        <label for="kontaktperson">För & Efternamn</label>
+        <input type="text" id="kontaktperson" name="kontaktperson" required>
+
+        <label for="telefonnummer">TELEFONNUMMER</label>
+        <input type="tel" id="telefonnummer" name="telefonnummer" required>
+
+        <label for="epost">E-POST</label>
+        <input type="email" id="epost" name="epost" required>
+
+        <label for="ovrigt">ÖVRIGT (Om man är allergisk mot något skriv här)</label>
+        <textarea id="ovrigt" name="ovrigt" rows="7"></textarea>
+
+        <button type="submit" id="skicka">SKICKA</button>
+    </form>
+
+
+    <footer>
+        <h5>Copyright 2016 Syrisk Ortodoxa Ungdomsförbundet.</h5>
+    </footer>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
