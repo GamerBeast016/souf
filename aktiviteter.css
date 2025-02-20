@@ -1,0 +1,132 @@
+/*main content for aktiviteter html*/
+
+/*not connected with any other files just aktiviteter.html*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*form for bokning*/
+form {
+    max-width: 850px;
+    margin: auto;
+    padding: 70px;
+    padding-bottom: 80px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+}
+
+#ovrigt{
+    overflow-y: auto;
+    resize: none; 
+    height: auto;
+}
+
+input,
+textarea {
+    color: #313131da;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #000;
+    outline: none;
+}
+
+#skicka {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+    padding: 10px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+#skicka:hover {
+    background-color: #313131da;
+    color: #fff;
+    border: 3px solid #0c0c0c;
+}
+
+@media (width < 768px){
+    #skicka{
+        background-color: #313131da;
+        color: #fff;
+        border: 3px solid #0c0c0c;
+    }
+}
+
+/*blackbox bokning logo*/
+.bokning {
+    background-color: #3d3c3c;
+    text-align: center;
+    margin-top: 90px;
+    padding: 20px;
+    position: relative;
+}
+
+.bokning::after {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #3d3c3c;
+}
+
+.bokning h1 {
+    color: white;
+    font-size: 40px;
+}
+
+/*Histori*/
+.souf {
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.souf h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-top: 20px;
+}
+
+.souf .under {
+    padding-top: 20px;
+    border-bottom: 2px solid #838282;
+    margin-bottom: 1rem;
+}
+
+.händelsen p {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 1.625;
+    margin-bottom: 1rem;
+}
+
+/*Images for different camps if organizing one, or for various activities.*/
