@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
   submitButton.parentNode.insertBefore(messageDiv, submitButton.nextSibling);
 
   // Personnummer validation (ÅÅÅÅMMDD-XXXX format)
-  const personnummerRegex = /^\d{6}-\d{4}$/;
+  const personnummerRegex = /^\d{8}-\d{4}$/;
 
   form1.addEventListener("submit", function (event) {
       event.preventDefault();
