@@ -64,6 +64,14 @@ textarea:focus {
     border: 3px solid #0c0c0c;
 }
 
+@media (width < 768px){
+    #skicka{
+        background-color: #313131da;
+        color: #fff;
+        border: 3px solid #0c0c0c;
+    }
+}
+
 /*blackbox bokning logo*/
 .bokning {
     background-color: #3d3c3c;
