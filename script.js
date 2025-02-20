@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
       
       const name = document.getElementById("kontaktperson").value;
-      messageDiv.textContent = `Tack, ${name}! Din anmälan har skickats.`;
+      messageDiv.textContent = `Tack, ${name}! Din anmälan har skickats`;
       messageDiv.style.display = "block";
 
       setTimeout(() => {
@@ -106,18 +106,18 @@ document.addEventListener("DOMContentLoaded", function () {
       const personnummer = document.getElementById("Personnummer").value;
 
       if (personnummerRegex.test(personnummer)) {
-        messageDiv.textContent = `Tack! Din anmälan med personnummer har skickats.`;
+        messageDiv.textContent = `Tack! Din anmälan med personnummer har skickats`;
         messageDiv.style.display = "block";
         
         setTimeout(() => {
           messageDiv.style.display = "none";
         }, 5000);
       } else {
-        messageDiv.textContent = "Felaktigt format på personnummer. Använd formatet ÅÅÅÅMMDD-XXXX (t.ex. 20001010-1080).";
+        messageDiv.textContent = "Felaktigt format på personnummer. Använd formatet ÅÅÅÅMMDD-XXXX (t.ex. 20001010-1080) (Vänta (10s) tills denna text går bort)";
         messageDiv.style.display = "block";
         setTimeout(() => {
           messageDiv.style.display = "none";
-        }, 15000);
+        }, 10000);
       }
       
       // Reset the form
